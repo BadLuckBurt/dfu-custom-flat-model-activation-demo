@@ -1,0 +1,246 @@
+{
+    "Position": 25146065,
+    "Index": 9996,
+    "Name": "BLB00003.RDB",
+    "Type": "Rdb",
+    "RmbBlock": {
+        "FldHeader": {
+            "NumBlockDataRecords": 0,
+            "NumMisc3dObjectRecords": 0,
+            "NumMiscFlatObjectRecords": 0,
+            "BlockPositions": null,
+            "BuildingDataList": null,
+            "BlockDataSizes": null,
+            "GroundData": {
+
+            },
+            "AutoMapData": null,
+            "Name": null,
+            "OtherNames": null
+        },
+        "SubRecords": null,
+        "Misc3dObjectRecords": null,
+        "MiscFlatObjectRecords": null
+    },
+    "RdbBlock": {
+		"ModelReferenceList": [
+			{
+				"ModelId": "57090",
+				"ModelIdNum": 57090,
+				"Description": "XXX"
+			},
+			{
+				"ModelId": "70300",
+				"ModelIdNum": 70300,
+				"Description": "XXX"
+			},
+			{
+				"ModelId": "41005",
+				"ModelIdNum": 41005,
+				"Description": "XXX"
+			},
+			{
+				"ModelId": "41030",
+				"ModelIdNum": 41030,
+				"Description": "XXX"
+			}
+		],
+		"ObjectRootList": [
+			{
+				"RdbObjects": [
+					{
+						"Position": 10000,
+						"Index": 0,
+						"XPos": 175,
+						"YPos": 0,
+						"ZPos": -154,
+						"Type": "Model",
+						"Resources": {
+							"ModelResource": {
+								"XRotation": 0,
+								"YRotation": 0,
+								"ZRotation": 0,
+								"ModelIndex": 0,
+								"SoundIndex": 0,
+								"ActionResource": {
+									"Position": 10000,
+									"Axis": 0,
+									"Duration": 0,
+									"Magnitude": 0,
+									"NextObjectIndex": -1,
+									"Flags": 0
+								}
+							}
+						}
+					},
+					{
+						"Position": 10001,
+						"Index": 1,
+						"XPos": 328,
+						"YPos": 0,
+						"ZPos": -154,
+						"Type": "Model",
+						"Resources": {
+							"ModelResource": {
+								"XRotation": 0,
+								"YRotation": 0,
+								"ZRotation": 0,
+								"ModelIndex": 1,
+								"SoundIndex": 0,
+								"ActionResource": {
+									"Position": 10001,
+									"Axis": 0,
+									"Duration": 0,
+									"Magnitude": 0,
+									"NextObjectIndex": -1,
+									"Flags": 0
+								}
+							}
+						}
+					}
+				]
+			},
+			{
+				"RdbObjects": [
+					{
+						"Position": 10002,
+						"Index": 2,
+						"XPos": 79,
+						"YPos": -38,
+						"ZPos": -9,
+						"Type": "Model",
+						"Resources": {
+							"ModelResource": {
+								"XRotation": 0,
+								"YRotation": 0,
+								"ZRotation": 0,
+								"ModelIndex": 2,
+								"SoundIndex": 0,
+								"ActionResource": {
+									"Position": 10002,
+									"Axis": 0,
+									"Duration": 0,
+									"Magnitude": 0,
+									"NextObjectIndex": -1,
+									"Flags": 0
+								}
+							}
+						}
+					},
+					{
+						"Position": 10003,
+						"Index": 3,
+						"XPos": 265,
+						"YPos": -33,
+						"ZPos": -10,
+						"Type": "Model",
+						"Resources": {
+							"ModelResource": {
+								"XRotation": 0,
+								"YRotation": 1024,
+								"ZRotation": 0,
+								"ModelIndex": 3,
+								"SoundIndex": 0,
+								"ActionResource": {
+									"Position": 10003,
+									"Axis": 0,
+									"Duration": 0,
+									"Magnitude": 0,
+									"NextObjectIndex": -1,
+									"Flags": 0
+								}
+							}
+						}
+					}
+				]
+			},
+			{
+				"RdbObjects": [
+					{
+						"Index": 5,
+						"XPos": 162,
+						"YPos": -19,
+						"ZPos": -139,
+						"Type": "Light",
+						"Resources": {
+							"LightResource": {
+								"Unknown1": 32,
+								"Unknown2": 0,
+								"Radius": 100
+							}
+						}
+					},
+					{
+						"Position": 10004,
+						"Index": 6,
+						"XPos": 162,
+						"YPos": -19,
+						"ZPos": -139,
+						"Type": "Flat",
+						"Resources": {
+							"FlatResource": {
+								"Position": 10004,
+								"TextureArchive": 210,
+								"TextureRecord": 1,
+								"Flags": 0,
+								"Magnitude": 0,
+								"SoundIndex": 0,
+								"FactionOrMobileId": 0,
+								"NextObjectOffset": 0,
+								"Action": 0
+							}
+						}
+					},
+					{
+						"Position": 10005,
+						"Index": 6,
+						"XPos": 176,
+						"YPos": -20,
+						"ZPos": -52,
+						"Type": "Flat",
+						"Resources": {
+							"FlatResource": {
+								"Position": 10005,
+								"TextureArchive": 211,
+								"TextureRecord": 20,
+								"Flags": 0,
+								"Magnitude": 0,
+								"SoundIndex": 0,
+								"FactionOrMobileId": 0,
+								"NextObjectOffset": 0,
+								"Action": 0
+							}
+						}
+					},
+					{
+						"Position": 10006,
+						"Index": 7,
+						"XPos": 304,
+						"YPos": -22,
+						"ZPos": -155,
+						"Type": "Flat",
+						"Resources": {
+							"FlatResource": {
+								"Position": 10006,
+								"TextureArchive": 199,
+								"TextureRecord": 10,
+								"Flags": 0,
+								"Magnitude": 0,
+								"SoundIndex": 0,
+								"FactionOrMobileId": 0,
+								"NextObjectOffset": 0,
+								"Action": 0
+							}
+						}
+					}
+				]
+			},
+			{
+				"RdbObjects": []
+			}
+		]
+	},
+    "RdiBlock": {
+        "Data": null
+    }
+}

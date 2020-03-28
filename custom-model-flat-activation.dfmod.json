@@ -1,0 +1,30 @@
+{
+    "ModTitle": "Custom Flat and Model Activation demo",
+    "ModVersion": "0.1",
+    "ModAuthor": "BadLuckBurt",
+    "ContactInfo": "x",
+    "DFUnity_Version": "0.10.21",
+    "ModDescription": "Demonstration of how to add custom flat and model activation",
+    "GUID": "2b5eef5a-4552-4cfa-9c4e-cf83e009a35e",
+    "Files": [
+        "Assets/Game/Mods/custom-flat-model-activation/Custom_Flat_Model_Activation.cs",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Materials/22_2-0.mat",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Materials/22_3-0.mat",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Materials/22_4-0.mat",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Materials/67_0-0.mat",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Models/57090.fbx",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Models/41030.fbx",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Models/41030.prefab",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Models/57090.prefab",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Textures/22_2-0.PNG",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Textures/22_3-0.PNG",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Textures/22_4-0.PNG",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Textures/67_0-0.PNG",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/WorldData/locationnew-customactivation-17.json",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/WorldData/BLB00003.RDB.json",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Models/211_20.fbx",
+        "Assets/Game/Mods/custom-flat-model-activation/Assets/Models/211_20.prefab"
+    ],
+    "Contributes": null,
+    "Dependencies": null
+}
