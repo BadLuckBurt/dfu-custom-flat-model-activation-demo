@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using System.Collections;
 using DaggerfallWorkshop.Game;
 using DaggerfallWorkshop.Game.Utility.ModSupport;
@@ -12,9 +13,6 @@ namespace BLB.CustomFlatModelActivation
     {
         public static Mod mod;
 		public static GameObject go;
-        public static GameObject CustomFlatModelActivation;
-
-        public static GameObject addCrystalLight;
 
         //like in the last example, this is used to setup the Mod.  This gets called at Start state.
         [Invoke]
@@ -23,24 +21,20 @@ namespace BLB.CustomFlatModelActivation
             mod = initParams.Mod;
             var go = new GameObject(mod.Title);
             go.AddComponent<CustomFlatModelActivationModLoader>();
-			
-            //var addCrystalLight = new AddCrystalLight();
 
             Debug.Log("Started setup of : " + mod.Title);
-            //start loading all assets asynchrousnly - the bool paramater tells it to unload the asset bundle since all assets are loaded
-            //ModManager.Instance.GetComponent<MonoBehaviour>().StartCoroutine(mod.LoadAllAssetsFromBundleAsync(false));
 
-            PlayerActivate.RegisterCustomActivation(210, 1, CampfireActivation);
-            PlayerActivate.RegisterCustomActivation(211, 20, ScarecrowActivation);
-            PlayerActivate.RegisterCustomActivation(41005, BroomstickCabinetActivation);
-            PlayerActivate.RegisterCustomActivation(41030, EmptyBookshelfActivation);
+            PlayerActivate.RegisterCustomActivation(mod, 210, 1, CampfireActivation);
+            PlayerActivate.RegisterCustomActivation(mod, 211, 20, ScarecrowActivation);
+            PlayerActivate.RegisterCustomActivation(mod, 41005, BroomstickCabinetActivation);
+            PlayerActivate.RegisterCustomActivation(mod, 41030, EmptyBookshelfActivation);
 
-            PlayerActivate.RegisterCustomActivation(57089, CrystalActivation);
+            PlayerActivate.RegisterCustomActivation(mod, 57089, CrystalActivation);
 
             mod.IsReady = true;
         }
 
-        private static void ShowMessageBox(string message, bool clickAnywhereToClose = false)
+        private static void ShowMessageBox(string message, bool clickAnywhereToClose = true)
         {
             DaggerfallMessageBox messageBox = new DaggerfallMessageBox(DaggerfallUI.UIManager);
             messageBox.ClickAnywhereToClose = clickAnywhereToClose;
@@ -68,35 +62,35 @@ namespace BLB.CustomFlatModelActivation
             sender.CloseWindow();
         }
 
-        private static void CrystalActivation(Transform transform)
+        private static void CrystalActivation(RaycastHit hit)
         {
             string message = "Crystal activated";
             Debug.Log(message);
             ShowMessageBox(message);
         }
 
-        private static void EmptyBookshelfActivation(Transform transform)
+        private static void EmptyBookshelfActivation(RaycastHit hit)
         {
-            string message = "This is a empty bookshelf replacement mesh";
+            string message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
             Debug.Log(message);
             ShowMessageBox(message);
         }
 
-        private static void BroomstickCabinetActivation(Transform transform)
+        private static void BroomstickCabinetActivation(RaycastHit hit)
         {
             string message = "This is a classic DF broomstick cabinet model";
             Debug.Log(message);
             ShowMessageBox(message);
         }
 
-        private static void ScarecrowActivation(Transform transform)
+        private static void ScarecrowActivation(RaycastHit hit)
         {
             string message = "Oh nose, it's a scarecrow replacement mesh";
             Debug.Log(message);
             ShowMessageBox(message);
         }
 
-        private static void CampfireActivation(Transform transform)
+        private static void CampfireActivation(RaycastHit hit)
         {
             //Debug.Log("I CAN HAS ACTIVATED CAMPFIRES");
             IUserInterfaceManager uiManager = DaggerfallUI.UIManager;
