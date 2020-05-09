@@ -19,7 +19,7 @@ namespace BLB.CustomFlatModelActivation
         public static void InitAtStartState(InitParams initParams)
         {
             mod = initParams.Mod;
-            var go = new GameObject(mod.Title);
+            go = new GameObject(mod.Title);
             go.AddComponent<CustomFlatModelActivationModLoader>();
 
             Debug.Log("Started setup of : " + mod.Title);
@@ -45,9 +45,9 @@ namespace BLB.CustomFlatModelActivation
 
             //messageBox.AddButton(DaggerfallMessageBox.MessageBoxButtons.Yes);
             //messageBox.AddButton(DaggerfallMessageBox.MessageBoxButtons.No);
-            messageBox.AddCustomButton(99, "SNEAK", false);
-            messageBox.AddCustomButton(99, "YELL", false);
-            messageBox.OnCustomButtonClick += Generic_messageBox_OnButtonClick;
+            //messageBox.AddCustomButton(99, "SNEAK", false);
+            //messageBox.AddCustomButton(99, "YELL", false);
+            //messageBox.OnCustomButtonClick += Generic_messageBox_OnButtonClick;
 
             messageBox.Show();
         }
@@ -92,7 +92,6 @@ namespace BLB.CustomFlatModelActivation
 
         private static void CampfireActivation(RaycastHit hit)
         {
-            //Debug.Log("I CAN HAS ACTIVATED CAMPFIRES");
             IUserInterfaceManager uiManager = DaggerfallUI.UIManager;
             uiManager.PushWindow(new DaggerfallRestWindow(uiManager, true));
         }
@@ -100,7 +99,7 @@ namespace BLB.CustomFlatModelActivation
         [Invoke(StateManager.StateTypes.Game)]
         public static void InitAtGameState(InitParams initParams)
         {
-
+            
         }
     }
 }
